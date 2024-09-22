@@ -1,0 +1,368 @@
+@media (max-width: 1279px) {
+    .header__wrapper, .not-only__wrapper, .about__wrapper,.pets__wrapper, .help__wrapper, .donation__wrapper, .footer__wrapper {
+        width: 95%;
+    }
+}
+@media (max-width:1200px) {
+    h2 {
+        width: 410px;
+        font-size: 44px;
+        font-weight: 400;
+        margin: 0;
+    }
+    h3 {
+        font-size: 35px;
+        font-weight: 400;
+        margin: 0;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .navbar__list li a{
+        font-size: 14.7px;
+    }
+    .not-only__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .not-only__info {
+        margin: 0 auto;
+        padding: 60px 42px 243px 40px;
+    }
+    .not-only__button {
+        margin: 42px auto;
+    }
+    .not-only__image {
+        width: 569px;
+        height: 593px;
+        display: flex;
+        align-self: flex-end;
+        margin: 150px 0 0 0;
+    }
+    .not-only__image img{
+        width: 569px;
+        height: 593px;
+        padding: 0;
+        margin: 0;
+    }
+    .about__wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .about__image {
+        width: 308px;
+        height: 408px;
+        margin: 80px auto 0 auto;
+    }
+    .about__info {
+        margin: 0 auto;
+    }
+    .about__info h3 {
+        text-align: center;
+    }
+    .about__info p {
+        text-align: justify;
+    }
+    .pets__wrapper h3{
+        text-align: center;
+    }
+    .pets__wrapper {
+        justify-content: center;
+    }
+    .pets__carousel {
+        margin: 0 auto;
+    }
+    .help__cards {
+        width: 630px;
+        height: 450px;
+    }
+    .donation__wrapper {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .donation__image, .donation__info {
+        margin: 0 auto;
+    }
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+    .footer__contacts, .footer__location {
+        width: 278px;
+        height: 234px;
+        margin: 0 auto;
+    }
+    .footer__email a img, .footer__phone a img, .footer__address a img{
+        margin: 0 10px 0 0;
+    }
+    .footer__image {
+        margin: 65px auto 0 auto;
+    }
+    .footer__image img{
+        width: 300px;
+        height: 310px;
+    }
+}
+@media (max-width: 1080px)  {
+    .pets__carousel__wrapper {
+        width: 700px;
+    }
+}
+@media (max-width: 768px)  {
+    .help__cards {
+        width: 430px;
+        height: 650px
+ }
+}
+@media (max-width: 767px)  {
+    .navbar {
+        align-items: center;
+    }
+    .navbar__list {
+        flex-direction: column;
+    }
+    .navbar__list li a {
+        font-size: 32px;
+    }
+    .navbar__list li {
+        margin: 20px 0;
+    }
+    .off-screen-menu {
+        display: none;
+        visibility: hidden;
+        background-color: #292929;
+        height: 100%;
+        width: 100%;
+        max-width: 480px;
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: slideToRight 0.3s ease forwards;
+        z-index: 5;
+    }
+    .off-screen-menu.active {
+        visibility: visible;
+        animation: slideInFromRight 0.3s ease forwards;
+        right: 0px;
+        position: fixed;
+    }
+    @keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(480px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(480px);
+  }
+}
+    .ham-menu {
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+        position: relative;
+        cursor: pointer;
+        z-index: 2;
+        transform:  rotate(0deg);
+        transition: .3s ease;
+        z-index: 6;
+    }
+    .ham-menu span {
+        height: 1px;
+        width: 100%;
+        background-color: #F1CDB3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+    .ham-menu.active  {
+        transform:  rotate(90deg);
+        transition: .3s ease;
+    }
+    .pets__wrapper {
+        width: 320px;
+        padding: 80px 0 100px 0;
+        overflow: hidden;
+    }
+    .pets__carousel {
+        width: 320px;
+        padding: 0 0 80px 0;
+
+    }
+    .pets__carousel__wrapper {
+        width: 320px;
+    }
+    .pets__button {
+        margin: 0 auto;
+    }
+    .pets__arrow-left, .pets__arrow-right {
+        top: 90%;
+    }
+    .pets__arrow-left {
+        left: 60px;
+    }
+    .pets__arrow-right {
+        right: 60px;
+    }
+}
+@media (max-width: 600px) {
+    h2 {
+        width: 300px;
+        font-size: 25px;
+        text-align: center;
+    }
+    h3 {
+        width: 300px;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0;
+    }
+    h4 {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .header__wrapper {
+        width: 320px;
+    }
+    .navbar__logo {
+        width: 185px;
+    }
+    .not-only__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        width: 320px;
+    }
+    .not-only__info {
+        width: 300px;
+        margin: 0 auto;
+        padding: 60px 0 243px 0;
+    }
+    .not-only__info p {
+        width: 300px;
+        text-align: center;
+    }
+    .not-only__image, .not-only__image img {
+        width: 260px;
+        height: 272px;
+    }
+    .about__wrapper {
+        flex-direction: column-reverse;
+        width: 320px;
+        justify-content: center;
+        padding: 40px 0 100px 0;
+    }
+    .about__image {
+        width: 308px;
+        height: 408px;
+        margin: 80px auto 0 auto;
+    }
+    .about__info p {
+        width: 270px;
+        text-align: justify;
+        margin: 22px auto;
+    }
+    .about__info {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .about__image, .about__image img {
+        width: 260px;
+        height: 354px;
+        margin: 20px auto 0 auto;
+    }
+    .help__wrapper {
+        width: 320px;
+        padding: 80px 0 100px 0;
+    }
+    .help__cards {
+        width: 300px;
+        height: 550px;
+        justify-content: flex-start;
+        margin: 42px auto;
+    }
+    .help__card {
+        width: 110px;
+        height: 87px;
+    }
+    .help__card h4 {
+        margin: 20px 0 0 0;
+    }
+    .donation__wrapper {
+        width: 320px;
+        padding: 42px 0;
+        margin: 0 auto;
+    }
+    .donation__image, .donation__info {
+        margin: 0 auto;
+    }
+    .donation__image, .donation__image img{
+        width: 260px;
+        height: 135px;
+    }
+    .donation__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+    }
+    .donation__info h5 {
+        width: 300px;
+        text-align: center;
+    }
+    .donation__card {
+        width: 281px;
+        margin: 0 auto;
+    }
+    .donation__card a {
+        width: 206px;
+        font-size: 15px;
+    }
+    .donation__card-info {
+        width: 280px;
+        text-align: justify;
+        margin: 20px auto;
+    }
+    .footer__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 320px;
+        padding: 40px 0 0 0;
+    }
+    .footer__contacts,.footer__location {
+        margin: 20px auto;
+    }
+    .footer__image{
+        margin: 40px auto 0 auto;
+        width: 260px;
+        height: 269px;
+    }
+    .footer__image img{
+        width: 260px;
+        height: 269px;
+    }
+}

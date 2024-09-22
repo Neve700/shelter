@@ -1,0 +1,179 @@
+@media (max-width: 1250px) {
+    .navbar,.header__wrapper, .pets__wrapper, .footer__wrapper {
+        width: 95%;
+    }
+    .pets__cards {
+        width: 1000px;
+        grid-template-columns: repeat(3, 270px);
+    }
+}
+@media (max-width: 1150px) {
+    .navbar,.header__wrapper,.footer__wrapper {
+        width: 95%;
+    }
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+    .pets__buttons {
+        width: 300px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .footer__wrapper
+    .footer__contacts, .footer__location {
+        width: 278px;
+        height: 234px;
+    }
+    .footer__email a img, .footer__phone a img, .footer__address a img{
+        margin: 0 10px 0 0;
+    }
+    .footer__image {
+        margin: 65px auto 0 auto;
+    }
+    .footer__image,.footer__image img{
+        width: 300px;
+        height: 310px;
+    }
+
+}
+@media (max-width: 1100px) {
+    .pets__cards {
+        width: 600px;
+        grid-template-columns: repeat(2, 270px);
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .navbar {
+        align-items: center;
+        }
+        .navbar__list {
+            flex-direction: column;
+        }
+        .navbar__list li a {
+            font-size: 32px;
+        }
+        .navbar__list li {
+            margin: 20px 0;
+        }
+        .off-screen-menu {
+            display: none;
+            visibility: hidden;
+            background-color: #FFFFFF;
+            height: 100%;
+            width: 100%;
+            max-width: 480px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: slideToRight 0.3s ease forwards;
+            z-index: 5;
+        }
+        .off-screen-menu.active {
+        visibility: visible;
+        animation: slideInFromRight 0.3s ease forwards;
+        right: 0px;
+        position: fixed;
+        }
+        @keyframes slideInFromRight {
+            0% {
+              opacity: 0;
+              transform: translateX(480px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+          
+          @keyframes slideToRight {
+            0% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+            100% {
+              opacity: 0;
+              transform: translateX(480px);
+            }
+          }
+        .ham-menu {
+            height: 30px;
+            width: 30px;
+            margin-left: auto;
+            position: relative;
+            cursor: pointer;
+            z-index: 2;
+            transform:  rotate(0deg);
+            transition: .3s ease;
+            z-index: 6;
+        }
+    
+        .ham-menu span {
+            height: 1px;
+            width: 100%;
+            background-color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3s ease;
+        }
+    
+        .ham-menu span:nth-child(1) {
+            top: 25%;
+        }
+        .ham-menu span:nth-child(3) {
+            top: 75%;
+        }
+        .ham-menu.active  {
+            transform:  rotate(90deg);
+            transition: .3s ease;
+        }
+    }
+@media (max-width: 675px) {
+    .pets__cards {
+        width: 320px;
+        grid-template-columns: repeat(1, 270px);
+    }
+    .footer__contacts,.footer__location {
+        margin: 20px auto;
+    }
+    .footer__image{
+        margin: 40px auto 0 auto;
+        width: 260px;
+        height: 269px;
+    }
+    .footer__image img{
+        width: 260px;
+        height: 269px;
+    }
+}
+@media (max-width: 600px) {
+    .navbar,.header__wrapper, .pets__wrapper, .footer__wrapper {
+        width: 320px;
+    }
+    .navbar__logo h1{
+        width: 184px;
+    }
+    .pets__wrapper {
+        padding: 80px 0 100px 0;
+    }
+    .pets__wrapper h3{
+        width: 300px;
+        font-size: 25px;
+    }
+    .footer__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px 0 0 0;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Cozy House - shelter for pets in Boston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/pets/pets.css">
+    <link rel="stylesheet" href="css/pets/pets-adaptive.css">
+</head>
+<body>
+    <header>
+        <div class="header__wrapper">
+        <nav class="navbar">
+            <div class="navbar__logo">
+            <a href="index.html">
+                <h1>Cozy House</h1>
+                <span>Shelter for pets in Boston</span>
+            </a>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="off-screen-menu">
+            <ul class="navbar__list">
+                <li><a href="index.html#about">About the shelter</a></li>
+                <li><a class="pets__active" role="link" aria-disabled="true">Our pets</a></li>
+                <li><a href="index.html#help">Help the shelter</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section id="our-friends">
+            <div class="pets__wrapper" id="pets__wrapper">
+                <h3>Our friends who <br> are looking for a house</h3>
+                <div class="pets__cards" id="pets__cards">
+                </div>
+                <ul class="pets__buttons">
+                   <li><form action="pets.html"><button type="submit" class="pets__double-left" disabled><img src="images/pets/arrows/double-left.svg" alt="to the first page"></button></form></li>
+                   <li> <form action="pets.html"><button class="pets__left" disabled><img src="images/pets/arrows/left.svg" alt="previous page"></button></form></li>
+                   <li><button class="pets__page" disabled>1</button></li>
+                   <li><form action="pets.html"><button class="pets__right"><img src="images/pets/arrows/right.svg" alt="next page"></button></form></li>
+                   <li><form action="pets.html"><button class="pets__double-right"><img src="images/pets/arrows/double-right.svg" alt="to the last page"></button></form></li>     
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer id="contacts">
+        <div class="footer__wrapper">
+            <div class="footer__contacts">
+                <h3>For questions and suggestions</h3>
+                <div class="footer__email">
+                    <a href="mailto:uF0Za@example.com">
+                    <img src="images/footer/icon-email.svg" alt="email">
+                    uF0Za@example.com
+                    </a>
+                </div>
+                <div class="footer__phone">
+                    <a href="tel:+136745677554">
+                    <img src="images/footer/icon-phone.svg" alt="phone">
+                    +13 674 567 75 54
+                    </a>
+                </div>
+            </div>
+            <div class="footer__location"><div class="footer__location">
+                <h3>We are waiting for your visit</h3>
+                <div class="footer__address">
+                    <a href="https://www.google.com/maps/place/1+Central+Street,+Boston" target="_blank">
+                        <img src="images/footer/icon-marker.svg" alt="marker">
+                        1 Central Street, Boston <br> (entrance from the store)
+                    </a>
+                </div>
+                <div class="footer__address">
+                    <a href="https://www.google.com/maps/place/18+South+Park,+London" target="_blank">
+                        <img src="images/footer/icon-marker.svg" alt="marker">
+                        18 South Park, London
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="footer__image">
+                <img src="images/footer/footer-puppy.png" alt="puppy">
+            </div>
+        </div>
+    </footer>
+    <script  type="module" src="scripts/ham_menu.js"></script>
+    <script type="module" src="scripts/pets.js"></script>
+</body>
+</html>
